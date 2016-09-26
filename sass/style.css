@@ -1,0 +1,21 @@
+/* line 1, style.scss */
+html, body {
+  height: 100%; }
+
+/* line 5, style.scss */
+#nav-logo {
+  padding-right: 15px;
+  border-right: 1px solid white; }
+
+/* line 11, style.scss */
+nav button {
+  color: white; }
+
+/* line 16, style.scss */
+#collapse-menu {
+  margin-top: 46px; }
+
+@media (min-width: 768px) {
+  /* line 21, style.scss */
+  #collapse-menu {
+    margin-top: 0px; } }

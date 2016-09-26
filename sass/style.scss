@@ -1,0 +1,24 @@
+html, body{
+    height: 100%;
+}
+
+#nav-logo{
+    padding-right: 15px;
+    border-right: 1px solid white;
+}
+
+nav{
+    button{
+        color: white;
+    }
+}
+
+#collapse-menu{
+    margin-top: 46px;
+};
+
+@media (min-width: 768px){
+    #collapse-menu{
+    margin-top: 0px;
+};
+}
