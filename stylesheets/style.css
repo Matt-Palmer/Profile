@@ -1,36 +1,46 @@
-/* line 1, style.scss */
+/* line 5, style.scss */
 html, body {
   height: 100%;
   position: relative; }
 
-/* line 6, style.scss */
+/* line 12, style.scss */
 #nav-logo {
+  text-align: center;
   padding-right: 15px; }
 
-/* line 10, style.scss */
+/* line 17, style.scss */
 nav {
-  box-shadow: 0px 5px 5px black; }
-  /* line 13, style.scss */
+  font-weight: bold;
+  box-shadow: 0px 5px 5px black;
+  text-shadow: -2px 2px 5px black; }
+  /* line 24, style.scss */
   nav button {
-    color: white; }
+    color: white;
+    text-shadow: -2px 2px 5px black; }
 
-/* line 19, style.scss */
+/* line 32, style.scss */
 #collapse-menu {
-  margin-top: 46px; }
-  /* line 22, style.scss */
+  margin-top: 77px;
+  line-height: 60px; }
+  /* line 36, style.scss */
   #collapse-menu .nav-tabs {
     border: none; }
-  /* line 26, style.scss */
-  #collapse-menu .nav-link {
-    color: rgba(255, 255, 255, 0.75);
+  /* line 44, style.scss */
+  #collapse-menu .dropdown-menu {
     background-color: #0275d8;
-    border: none; }
-  /* line 32, style.scss */
-  #collapse-menu .nav-link.active {
-    border: none;
-    color: white; }
+    width: 250px;
+    border-radius: 8px;
+    border: 1px solid white; }
+    /* line 50, style.scss */
+    #collapse-menu .dropdown-menu .nav-item {
+      width: 100%;
+      margin: 0;
+      text-align: center; }
+      /* line 55, style.scss */
+      #collapse-menu .dropdown-menu .nav-item + .nav-item {
+        margin: 0; }
 
-/* line 39, style.scss */
+/* line 63, style.scss */
 #stage {
   background: url(../images/my-site.png) center center no-repeat;
   background-size: cover;
@@ -40,46 +50,50 @@ nav {
   display: flex;
   align-items: center; }
 
-/* line 49, style.scss */
+/* line 73, style.scss */
 #stage-caption {
-  max-width: 70%;
   margin: 0 auto;
   text-align: center;
-  border-radius: 8px;
-  font-size: 1.4rem;
-  font-weight: 400; }
+  font-size: 1.4rem; }
 
-/* line 60, style.scss */
-#myWork #example1 img {
-  width: 90%;
-  height: auto; }
-/* line 67, style.scss */
-#myWork #example2 img {
-  width: 40%;
-  height: auto; }
+/* line 79, style.scss */
+.content-title {
+  padding-bottom: 100px; }
 
-/* line 74, style.scss */
+/* line 83, style.scss */
 #experience {
   background-color: #4b4b4b;
   color: white; }
 
-/* line 79, style.scss */
-.sectionContent {
+/* line 88, style.scss */
+.section-dark {
+  background-color: #4b4b4b;
+  color: white; }
+
+/* line 94, style.scss */
+#previous-work1 img {
+  width: 90%; }
+
+/* line 100, style.scss */
+#previous-work2 img {
+  width: 40%; }
+
+/* line 105, style.scss */
+.section-content {
   padding: 100px 0;
   text-align: center;
   overflow: hidden; }
-  /* line 84, style.scss */
-  .sectionContent #content-title {
-    padding-bottom: 30px; }
-  /* line 88, style.scss */
-  .sectionContent #content-text {
-    padding: 60px 0; }
-  /* line 92, style.scss */
-  .sectionContent .card {
+  /* line 110, style.scss */
+  .section-content .card {
     background-color: transparent;
     border: none; }
 
 @media (min-width: 768px) {
-  /* line 103, style.scss */
+  /* line 117, style.scss */
   #collapse-menu {
     margin-top: 0px; } }
+@media (min-width: 991px) {
+  /* line 124, style.scss */
+  .section-caption {
+    display: flex;
+    align-items: center; } }
